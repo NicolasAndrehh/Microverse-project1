@@ -14,7 +14,7 @@
       <form id="survey-form">
         <div class="mb-3">
           <label id="name-label" for="exampleInputName" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" aria-describedby="namehelp" required>
+          <input type="text" class="form-control" id="name" aria-describedby="namehelp" placeholder="Enter your name" required>
         </div>
         <div class="mb-3">
           <label id="email-label" for="exampleInputEmail1" class="form-label">Email</label>
@@ -24,28 +24,28 @@
           <label id="number-label" for="exampleInputNumber" class="form-label">Number</label>
           <input type="number" class="form-control" id="number" min="1" max="100" placeholder="Enter a number between 1 to 100">
         </div>
-        <select class="form-select" aria-label="Default select example" id="dropdown">
-          <option selected>Open this select menu</option>
+        <select class="form-select mb-2" aria-label="Default select example" id="dropdown">
+          <option selected>Select an option</option>
           <option value="1">One</option>
           <option value="2">Two</option>
           <option value="3">Three</option>
         </select>
 
         <label for="">What is your gender</label>
-        <div class="form-check">
-          <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault1">
+        <div class="form-check my-2">
+          <input class="form-check-input" type="radio" name="gender" value="male" id="flexRadioDefault1">
           <label class="form-check-label" for="flexRadioDefault1">
             Male
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="gender" id="flexRadioDefault2" checked>
+          <input class="form-check-input" type="radio" name="gender" value="female" id="flexRadioDefault2" checked>
           <label class="form-check-label" for="flexRadioDefault2">
             Female
           </label>
         </div>
         
-        <label for="">Which languages do you master</label>
+        <label class="my-3" for="master">Which languages do you master</label>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" value="HTML">
           <label class="form-check-label" for="exampleCheck1">HTML</label>
@@ -62,8 +62,10 @@
           <input type="checkbox" class="form-check-input" id="exampleCheck1" value="PHP">
           <label class="form-check-label" for="exampleCheck1">PHP</label>
         </div>
-
-        <textarea name="comments" id="" cols="30" rows="10"></textarea>
+        <div class="form-floating">
+          <label for="floatingTextarea">Comments</label>
+          <textarea class="form-control mb-3" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        </div>
 
         <button type="submit" class="btn btn-primary" id="submit">Submit</button>
       </form>
