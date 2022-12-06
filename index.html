@@ -8,27 +8,29 @@
   </head>
 
   <body>
-    <h1 id="title">Microverse Survey Form</h1>
-    <p id="description">This is the trial of Microverse</p>
-    <form id="survey-form">
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Name</label>
-        <input type="email" class="form-control" id="name" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Number</label>
-        <input type="number" class="form-control" id="number">
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    <div class="container my-4 py-4">
+      <h1 class="text-center pt-3" id="title">Microverse Survey Form</h1>
+      <p class="text-center" id="description">This is the trial of Microverse</p>
+      <form id="survey-form">
+        <div class="mb-3">
+          <label id="name-label" for="exampleInputName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" aria-describedby="namehelp" required>
+        </div>
+        <div class="mb-3">
+          <label id="email-label" for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email" required>
+        </div>
+        <div class="mb-3">
+          <label id="number-label" for="exampleInputNumber" class="form-label">Number</label>
+          <input type="number" class="form-control" id="number" min="1" max="100" placeholder="Enter a number between 1 to 100">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
 
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
